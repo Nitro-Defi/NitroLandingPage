@@ -5,7 +5,7 @@ import blockchain from "@/assets/blockchain.gif";
 import Image from "next/image";
 
 import impLoss from "@/assets/jsonAssets/NitroFinance-Design-01.json";
-import capEfficiency from "@/assets/jsonAssets/NitroFinance-Design-02-v1.json";
+import capEfficiency from "@/assets/jsonAssets/NitroFinance-Design-02-v2.json";
 
 import elimination from "@/assets/jsonAssets/NitroFinance-Design-03-v1.json";
 import Lottie from "lottie-react";
