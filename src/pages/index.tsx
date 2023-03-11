@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import { NavBar, Hero, Features, Body, Goal } from "../components";
@@ -46,19 +46,21 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="text-white  bg-black">
-        <NavBar
-          scrollToGoal={scrollToTargetGoal}
-          scrollToCommunity={scrollToTargetCommunity}
-          scrollToAboutUs={scrollToTargetAboutUs}
-        />
-        <Hero />
-        <Features />
-        <Body />
-        <Goal
-          targetRefGoal={targetRefGoal}
-          targetReCommunity={targetReCommunity}
-        />
+      <main className="text-white  bg-black font-nova">
+        <div className={styles.nova}>
+          <NavBar
+            scrollToGoal={scrollToTargetGoal}
+            scrollToCommunity={scrollToTargetCommunity}
+            scrollToAboutUs={scrollToTargetAboutUs}
+          />
+          <Hero />
+          <Features />
+          <Body />
+          <Goal
+            targetRefGoal={targetRefGoal}
+            targetReCommunity={targetReCommunity}
+          />
+        </div>
       </main>
     </>
   );

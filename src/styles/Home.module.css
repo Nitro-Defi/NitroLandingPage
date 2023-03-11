@@ -98,3 +98,9 @@
   border: 0.506757px solid rgba(250, 250, 250, 0.2);
   border-radius: 8.10811px;
 }
+.nova {
+  font-family: "Proxima Nova";
+  src: url("../assets/fonts/Proxima Nova Bold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
