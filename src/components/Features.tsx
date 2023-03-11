@@ -17,7 +17,9 @@ const Features = (props: Props) => {
         </div>
       </div>
       <div className="flex justify-center px-5 md:px-0 ">
-        <p className="text-5xl font-bold -mt-32">Products And Features</p>
+        <p className="text-5xl font-bold -mt-32 text-center">
+          Products And Features
+        </p>
       </div>
       <div className="flex flex-row flex-wrap gap-5 justify-center px-7 md:px-[130px] ">
         <div className="w-[368px] h-[250px] rounded-[20px] bg-[#061727] hover:cursor-pointer hover:-translate-y-5 transform transition duration-500 ">
