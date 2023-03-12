@@ -19,7 +19,7 @@ const Body = (props: Props) => {
       <div>
         <div className="md:flex pt-[200px]  justify-between px-5 md:px-[145px]">
           <div className="md:w-[517px] w-full">
-            <h2 className="font-bold text-3xl md:text-5xl">
+            <h2 className="font-bold text-3xl md:text-5xl text-center md:text-start">
               {" "}
               Mitigation of impermanent loss
             </h2>
@@ -39,7 +39,7 @@ const Body = (props: Props) => {
             <Lottie animationData={capEfficiency} loop={true} />
           </div>
           <div className="md:w-[486px] w-full mt-20">
-            <h2 className="font-bold text-3xl md:text-5xl">
+            <h2 className="font-bold text-3xl md:text-5xl text-center md:text-start">
               {" "}
               Increase in capital efficiency
             </h2>
@@ -56,11 +56,11 @@ const Body = (props: Props) => {
 
         <div className="md:flex  justify-between md:px-[145px] px-5 mt-32">
           <div className="md:w-[517px] w-full pl-5">
-            <h2 className="font-bold text-3xl md:text-5xl">
+            <h2 className="font-bold text-3xl md:text-5xl text-center md:text-start">
               {" "}
               The Elimination Of Bad Debt
             </h2>
-            <p className="mt-[24px] text-[#BEBEBE]">
+            <p className="mt-[24px] text-[#BEBEBE] ">
               {
                 "             Nitro Finance features an automated liquidation process that helps to eliminate bad debt in the AMM pool by ensuring that positions are quickly and efficiently liquidated in the event of market price movement."
               }
