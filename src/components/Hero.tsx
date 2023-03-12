@@ -28,13 +28,13 @@ const Hero = (props: Props) => {
             </div>
           </div>
         </div>
-        <div className="hidden md:block pt-[60px]">
+        <div className="hidden md:block pt-[30px]">
           <Image
             src={frame}
             alt="hero"
             height="0"
             width="0"
-            className="w-[500px] h-[500px]"
+            className="w-[450px] h-[450px]"
           />
         </div>
       </div>

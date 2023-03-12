@@ -89,7 +89,7 @@
   border-radius: 8.10811px;
 }
 
-.icons :hover {
+.icons:hover {
   display: flex;
   justify-content: center;
   align-items: center;

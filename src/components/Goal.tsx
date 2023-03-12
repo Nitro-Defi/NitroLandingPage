@@ -47,7 +47,7 @@ const Goal = forwardRef<HTMLDivElement, Props>(
         >
           <p className={styles.ourGoal}>Join Our Community</p>
 
-          <div className="flex text-2xl mt-2 gap-5 ">
+          <div className="flex text-2xl mt-5 gap-5 ">
             <Link href="">
               <div className={styles.icons}>
                 <BsDiscord />
@@ -67,7 +67,7 @@ const Goal = forwardRef<HTMLDivElement, Props>(
             </Link>
           </div>
         </div>
-        <div className="flex justify-between  px-5 text-[10px] md:text-[10px] md:px-32 mt-32 pb-10">
+        <div className="flex justify-between  px-5 text-[10px] md:text-[15px] md:px-32 mt-32 pb-10">
           <p>Copyright © 2022 NitroFinance. All rights reserved.</p>
           <div className="flex gap-5">
             <p>Terms and Conditions </p>
