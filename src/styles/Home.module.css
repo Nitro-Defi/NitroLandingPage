@@ -84,7 +84,7 @@
   align-items: center;
   width: 56.59px;
   height: 55.93px;
-  transition: 0.1s ease;
+
   border: 0.506757px solid rgba(250, 250, 250, 0.2);
   border-radius: 8.10811px;
 }
@@ -93,6 +93,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s ease;
   width: 56.59px;
   height: 55.93px;
   background: linear-gradient(26.79deg, #0f0f1b 61.39%, #3645ff 89.7%);
@@ -102,6 +103,15 @@
 .nova {
   font-family: "Proxima Nova";
   src: url("../assets/fonts/Proxima Nova Bold.otf");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+.novaRegular {
+  font-family: "Proxima Nova";
+
+  src: url("../assets/fonts/ProximaNova-Regular.otf");
   font-weight: normal;
   font-style: normal;
 }
