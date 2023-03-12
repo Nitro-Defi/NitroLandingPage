@@ -55,7 +55,7 @@ const Body = (props: Props) => {
         </div>
 
         <div className="md:flex  justify-between md:px-[145px] px-5 mt-32">
-          <div className="md:w-[517px] w-full">
+          <div className="md:w-[517px] w-full pl-5">
             <h2 className="font-bold text-3xl md:text-5xl">
               {" "}
               The Elimination Of Bad Debt

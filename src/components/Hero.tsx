@@ -14,18 +14,14 @@ const Hero = (props: Props) => {
             THE DUAL FUNCTION AMM
           </h1>
 
-          <p className={styles.novaRegular}>
+          <p className="mt-5 pr-5">
             Nitro finance is cutting-edge defi protocol that integrates the
             functionality of an Automated Market Maker(AMM) with the ability to
             lend and borrow
           </p>
           <div className="flex gap-[32px] mt-[48px]">
             <button className={styles.btnLaunchApp}>Launch App</button>
-            <div className="bg-gradient-to-r from-cyan-500 to-blue-500 w-[157px] h-[49px] rounded-[5px] px-[0.8px] py-[0.8px]">
-              <button className="w-full h-full bg-[#00040F] rounded-[5px] ">
-                Read Docs
-              </button>{" "}
-            </div>
+            <button className={styles.readDocs}>Read Docs</button>{" "}
           </div>
         </div>
         <div className="hidden md:block pt-[30px]">

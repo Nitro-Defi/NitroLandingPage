@@ -1,4 +1,4 @@
-import React, { forwardRef, RefObject, useState } from "react";
+import React, { forwardRef, useState } from "react";
 import styles from "@/styles/Home.module.css";
 import logo from "@/assets/logo.png";
 import Image from "next/image";

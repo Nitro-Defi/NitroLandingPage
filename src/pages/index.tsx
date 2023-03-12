@@ -11,6 +11,7 @@ export default function Home() {
   const targetRefGoal = useRef<HTMLDivElement>(null);
   const targetReCommunity = useRef<HTMLDivElement>(null);
   const targetRefAboutUs = useRef<HTMLDivElement>(null);
+  const targetRefFeatures = useRef<HTMLDivElement>(null);
 
   const scrollToTargetGoal = () => {
     if (targetRefGoal.current) {
@@ -38,6 +39,15 @@ export default function Home() {
       });
     }
   };
+
+  const scrollToFeatures = () => {
+    if (targetRefFeatures.current) {
+      window.scrollTo({
+        top: targetRefFeatures.current.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <>
       <Head>
@@ -54,7 +64,10 @@ export default function Home() {
             scrollToAboutUs={scrollToTargetAboutUs}
           />
           <Hero />
-          <Features />
+          <Features
+            scrollToFeatures={scrollToFeatures}
+            targetRefFeatures={targetRefFeatures}
+          />
           <Body />
           <Goal
             targetRefGoal={targetRefGoal}
