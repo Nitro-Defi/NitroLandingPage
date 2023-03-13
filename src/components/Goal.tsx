@@ -14,7 +14,7 @@ const Goal = forwardRef<HTMLDivElement, Props>(
   ({ targetRefGoal, targetReCommunity }, ref) => {
     return (
       <div className="min-h-screen bg-[#00040F] w-screen">
-        <div className=" pt-32">
+        <div className=" ">
           <div className="-ml-32  absolute">
             <Image className="" src={symbol} alt="amm" height={0} width={0} />
           </div>
@@ -24,7 +24,7 @@ const Goal = forwardRef<HTMLDivElement, Props>(
               ref={targetRefGoal}
             >
               <p className={styles.ourGoal}>Our Goal</p>
-              <p className="md:px-0 px-5 z-[500] text-center">
+              <p className="md:px-0 px-5 z-[500] text-center w-[700px]">
                 Nitro Finance aims to provide a decentralized platform that
                 combines the features of a decentralized exchange (DEX) and a
                 money market. By doing so, Nitro Finance aims to create a
@@ -47,7 +47,7 @@ const Goal = forwardRef<HTMLDivElement, Props>(
         >
           <p className={styles.ourGoal}>Join Our Community</p>
 
-          <div className="flex text-2xl mt-5 gap-5 ">
+          <div className="flex text-2xl mt-10 gap-5 ">
             <Link href="">
               <div className={styles.icons}>
                 <BsDiscord />

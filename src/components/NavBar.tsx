@@ -49,13 +49,22 @@ const NavBar = forwardRef<HTMLDivElement, Props>(
             )}
 
             <div className="md:flex gap-10 px-[22px] hidden">
-              <p className="hover:cursor-pointer" onClick={scrollToGoal}>
+              <p
+                className="hover:cursor-pointer hover:text-[#00FDEE]"
+                onClick={scrollToGoal}
+              >
                 Goals
               </p>
-              <p className="hover:cursor-pointer" onClick={scrollToCommunity}>
+              <p
+                className="hover:cursor-pointer hover:text-[#00FDEE]"
+                onClick={scrollToCommunity}
+              >
                 Community
               </p>
-              <p className="hover:cursor-pointer" onClick={scrollToAboutUs}>
+              <p
+                className="hover:cursor-pointer hover:text-[#00FDEE]"
+                onClick={scrollToAboutUs}
+              >
                 About Us
               </p>
             </div>

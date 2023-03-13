@@ -8,7 +8,7 @@ type Props = {};
 const Hero = (props: Props) => {
   return (
     <div className="h-screen w-full bg-[#00040F] text-white">
-      <div className="flex justify-between px-5 md:px-[137px] pt-[127px]">
+      <div className="flex justify-between items-center px-5 md:px-[137px] pt-[127px]">
         <div className="md:w-[644px] pt-[100px] w-full flex flex-col">
           <h1 className="font-[1000] md:text-[70px]  md:mt-0 text-5xl tracking-wider">
             THE DUAL FUNCTION AMM
@@ -24,7 +24,7 @@ const Hero = (props: Props) => {
             <button className={styles.readDocs}>Read Docs</button>{" "}
           </div>
         </div>
-        <div className="hidden md:block pt-[30px]">
+        <div className="hidden  md:block mt-[30px] ">
           <Image
             src={frame}
             alt="hero"

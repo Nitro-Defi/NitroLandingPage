@@ -24,7 +24,7 @@ const Features = forwardRef<HTMLDivElement, Props>(
         </div>
         <div className="flex justify-center">
           <div
-            className="flex justify-center items-center -mt-[60px] text-xl animate-bounce rounded-full bg-gradient-to-r from-indigo-500 w-[60px] h-[60px] hover:cursor-pointer"
+            className="flex justify-center items-center -mt-[60px] text-xl animate-bounce rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 w-[60px] h-[60px] hover:cursor-pointer"
             onClick={scrollToFeatures}
           >
             <AiOutlineArrowDown className="text-3xl" />
