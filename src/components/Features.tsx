@@ -24,10 +24,12 @@ const Features = forwardRef<HTMLDivElement, Props>(
         </div>
         <div className="flex justify-center">
           <div
-            className="flex justify-center items-center -mt-[60px] text-xl animate-bounce rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 w-[60px] h-[60px] hover:cursor-pointer"
+            className=" -mt-[60px] text-xl animate-bounce rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 w-[60px] h-[60px] hover:cursor-pointer px-1 py-1"
             onClick={scrollToFeatures}
           >
-            <AiOutlineArrowDown className="text-3xl" />
+            <div className="bg-[#00040F] h-full w-full rounded-full flex justify-center items-center">
+              <AiOutlineArrowDown className="text-3xl  text-blue-300" />
+            </div>
           </div>
         </div>
 
@@ -35,7 +37,7 @@ const Features = forwardRef<HTMLDivElement, Props>(
           className="flex justify-center px-5 md:px-0 "
           ref={targetRefFeatures}
         >
-          <p className="text-5xl font-bold pt-10 text-center">
+          <p className="text-5xl mt-20 font-bold pt-10 text-center ">
             Products And Features
           </p>
         </div>
@@ -44,7 +46,7 @@ const Features = forwardRef<HTMLDivElement, Props>(
             <div className="flex flex-col items-center mt-10 px-10">
               <Image src={first} alt="" height="0" width="0" className="" />
               <p className="text-xl font-bold pt-2">Dual Function AMM</p>
-              <p className="text-sm text-gray-500 mt-3 text-center">
+              <p className="text-sm text-gray-300 mt-3 text-center">
                 {
                   " Nitro Finance's AMM acts as both a money market and a DEX,allowing for unparalleled flexibility and efficiency indecentralized trading."
                 }
@@ -55,7 +57,7 @@ const Features = forwardRef<HTMLDivElement, Props>(
             <div className="flex flex-col items-center mt-10 px-10">
               <Image src={second} alt="" height="0" width="0" className="" />
               <p className="text-xl font-bold pt-2">Concentrated Liquidity</p>
-              <p className="text-sm text-gray-500 mt-3 text-center">
+              <p className="text-sm text-gray-300 mt-3 text-center">
                 {
                   "              Nitro Finance's bin mechanism allows for concentrated liquidity,enabling traders to deposit assets into specific price ranges(bins) to improve market efficiency."
                 }
@@ -66,7 +68,7 @@ const Features = forwardRef<HTMLDivElement, Props>(
             <div className="flex flex-col items-center mt-10 px-10">
               <Image src={third} alt="" height="0" width="0" className="" />
               <p className="text-xl font-bold pt-2"> Bin Order</p>
-              <p className="text-sm text-gray-500 mt-3 text-center">
+              <p className="text-sm text-gray-300 mt-3 text-center">
                 {
                   " Nitro Finance's bin order functionality allows all types of limit orders to be placed directly within a specific bin, providing traders greater control over their trades."
                 }
@@ -80,7 +82,7 @@ const Features = forwardRef<HTMLDivElement, Props>(
                 {" "}
                 Innovative Liquidation mechanics
               </p>
-              <p className="text-sm text-gray-500 mt-3 text-center">
+              <p className="text-sm text-gray-300 mt-3 text-center">
                 {
                   " Nitro Finance's innovative liquidation mechanics allow for an active debt management system, ensuring that the protocol remains solvent and eliminating the risk of bad debt for users."
                 }
@@ -91,7 +93,7 @@ const Features = forwardRef<HTMLDivElement, Props>(
             <div className="flex flex-col items-center mt-10 px-10">
               <Image src={fifth} alt="" height="0" width="0" className="" />
               <p className="text-xl font-bold pt-2"> Nitro Point system</p>
-              <p className="text-sm text-gray-500 mt-3 text-center">
+              <p className="text-sm text-gray-300 mt-3 text-center">
                 {
                   "Nitro Finance's Nitro Point system allows phenomenal growth without dilution in value. and provides a sustainable"
                 }
