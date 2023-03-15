@@ -13,7 +13,7 @@ type Props = {
 const Goal = forwardRef<HTMLDivElement, Props>(
   ({ targetRefGoal, targetReCommunity }, ref) => {
     return (
-      <div className="min-h-screen bg-[#00040F] w-screen">
+      <div className="min-h-screen bg-[#00040F] w-screen ">
         <div className=" ">
           <div className="-ml-32  absolute">
             <Image className="" src={symbol} alt="amm" height={0} width={0} />

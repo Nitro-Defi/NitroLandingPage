@@ -1,11 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
-
-import frame from "@/assets/frame.gif";
+import Lottie from "lottie-react";
+import lottie from "lottie-web";
+import { useLottie } from "lottie-react";
+import frame from "@/assets/spinner.json";
 type Props = {};
 
 const Hero = (props: Props) => {
+  const options = {
+    animationData: frame,
+    loop: true,
+    autoplay: true,
+  };
+
+  const { View, setSpeed } = useLottie(options);
+  setSpeed(0.08);
+
   return (
     <div className="h-screen w-full bg-[#00040F] text-white">
       <div className="flex justify-between items-center px-5 md:px-[137px] pt-[127px]">
@@ -24,15 +35,8 @@ const Hero = (props: Props) => {
             <button className={styles.readDocs}>Read Docs</button>{" "}
           </div>
         </div>
-        <div className="hidden  md:block mt-[30px] ">
-          <Image
-            src={frame}
-            alt="hero"
-            height="0"
-            width="0"
-            className="w-[450px] h-[450px]"
-          />
-        </div>
+
+        <div className="hidden  md:block ">{View}</div>
       </div>
     </div>
   );

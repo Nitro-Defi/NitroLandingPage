@@ -1,8 +1,5 @@
 import React from "react";
 import styles from "@/styles/Home.module.css";
-import blockchain from "@/assets/blockchain.gif";
-
-import Image from "next/image";
 
 import impLoss from "@/assets/jsonAssets/NitroFinance-Design-01.json";
 import capEfficiency from "@/assets/jsonAssets/NitroFinance-Design-02-v2.json";

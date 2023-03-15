@@ -1,11 +1,11 @@
 import React, { forwardRef, useState, RefObject } from "react";
 import styles from "@/styles/Home.module.css";
 import Image from "next/image";
-import first from "@/assets/first.png";
-import second from "@/assets/liquidity.png";
-import third from "@/assets/binorder.png";
-import forth from "@/assets/mechanics.png";
-import fifth from "@/assets/star.png";
+import first from "@/assets/first.svg";
+import second from "@/assets/liquidity.svg";
+import third from "@/assets/binorder.svg";
+import forth from "@/assets/mechanics.svg";
+import fifth from "@/assets/star.svg";
 import { AiOutlineArrowDown } from "react-icons/ai";
 
 type Props = {
