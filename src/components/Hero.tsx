@@ -1,8 +1,7 @@
-import React, { useState, useRef, useEffect } from "react";
-import Image from "next/image";
+import React from "react";
+
 import styles from "@/styles/Home.module.css";
-import Lottie from "lottie-react";
-import lottie from "lottie-web";
+
 import { useLottie } from "lottie-react";
 import frame from "@/assets/spinner.json";
 type Props = {};

@@ -14,7 +14,7 @@ const Body = (props: Props) => {
     <div className="  bg-[#00040F] w-full">
       <div className={styles.purpleBlob}></div>
       <div>
-        <div className="md:flex pt-[100px]  justify-between px-5 md:px-[145px]">
+        <div className="md:flex pt-[250px]  justify-between px-5 md:px-[145px]">
           <div className="md:w-[517px] w-full">
             <h2 className="font-bold text-3xl md:text-5xl text-center md:text-start">
               {" "}

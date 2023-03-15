@@ -1,10 +1,11 @@
 import React, { forwardRef, RefObject } from "react";
-import amm from "@/assets/amm.gif";
-import symbol from "@/assets/symbol.png";
-import Image from "next/image";
+import { useLottie } from "lottie-react";
+import symbol from "@/assets/symbol.json";
+
 import styles from "@/styles/Home.module.css";
 import { BsDiscord, BsMedium, BsTwitter } from "react-icons/bs";
 import Link from "next/link";
+
 type Props = {
   targetRefGoal: RefObject<HTMLDivElement>;
   targetReCommunity: RefObject<HTMLDivElement>;
@@ -12,12 +13,18 @@ type Props = {
 
 const Goal = forwardRef<HTMLDivElement, Props>(
   ({ targetRefGoal, targetReCommunity }, ref) => {
+    const options = {
+      animationData: symbol,
+      loop: true,
+      autoplay: true,
+    };
+
+    const { View, setSpeed } = useLottie(options);
+    setSpeed(0.1);
     return (
       <div className="min-h-screen bg-[#00040F] w-screen ">
         <div className=" ">
-          <div className="-ml-32  absolute">
-            <Image className="" src={symbol} alt="amm" height={0} width={0} />
-          </div>
+          <div className="-ml-64  absolute">{View}</div>
           <div className="flex w-full justify-center">
             <div
               className="flex flex-col mt-32  items-center w-[667px] gap-5"
