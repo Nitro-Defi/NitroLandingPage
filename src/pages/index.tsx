@@ -8,33 +8,14 @@ import React, { useRef } from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const targetRefGoal = useRef<HTMLDivElement>(null);
   const targetReCommunity = useRef<HTMLDivElement>(null);
-  const targetRefAboutUs = useRef<HTMLDivElement>(null);
-  const targetRefFeatures = useRef<HTMLDivElement>(null);
 
-  const scrollToTargetGoal = () => {
-    if (targetRefGoal.current) {
-      window.scrollTo({
-        top: targetRefGoal.current.offsetTop,
-        behavior: "smooth",
-      });
-    }
-  };
+  const targetRefFeatures = useRef<HTMLDivElement>(null);
 
   const scrollToTargetCommunity = () => {
     if (targetReCommunity.current) {
       window.scrollTo({
         top: targetReCommunity.current.offsetTop,
-        behavior: "smooth",
-      });
-    }
-  };
-
-  const scrollToTargetAboutUs = () => {
-    if (targetRefAboutUs.current) {
-      window.scrollTo({
-        top: targetRefAboutUs.current.offsetTop,
         behavior: "smooth",
       });
     }
@@ -60,7 +41,6 @@ export default function Home() {
       <main className="text-white bg-[#00040F] font-nova ">
         <div className={styles.nova}>
           <NavBar
-            scrollToGoal={scrollToTargetGoal}
             scrollToCommunity={scrollToTargetCommunity}
             scrollToFeatures={scrollToFeatures}
           />
@@ -70,10 +50,7 @@ export default function Home() {
             targetRefFeatures={targetRefFeatures}
           />
           <Body />
-          <Goal
-            targetRefGoal={targetRefGoal}
-            targetReCommunity={targetReCommunity}
-          />
+          <Goal targetReCommunity={targetReCommunity} />
         </div>
       </main>
     </>

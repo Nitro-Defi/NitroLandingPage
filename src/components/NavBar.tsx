@@ -5,13 +5,12 @@ import Image from "next/image";
 import { BiMenuAltRight } from "react-icons/bi";
 import { IoMdClose } from "react-icons/io";
 type Props = {
-  scrollToGoal: () => void;
   scrollToCommunity: () => void;
   scrollToFeatures: () => void;
 };
 
 const NavBar = forwardRef<HTMLDivElement, Props>(
-  ({ scrollToGoal, scrollToCommunity, scrollToFeatures }, ref) => {
+  ({ scrollToCommunity, scrollToFeatures }, ref) => {
     const [isOpen, setIsOpen] = useState(false);
     return (
       <div className="w-screen text-white  bg-[#00040F] h-[96px] top-0 fixed  z-[1000] ">
@@ -55,12 +54,7 @@ const NavBar = forwardRef<HTMLDivElement, Props>(
               >
                 {"Products & Features"}
               </p>
-              <p
-                className="hover:cursor-pointer hover:text-[#00FDEE]"
-                onClick={scrollToGoal}
-              >
-                Goals
-              </p>
+
               <p
                 className="hover:cursor-pointer hover:text-[#00FDEE]"
                 onClick={scrollToCommunity}
@@ -72,13 +66,14 @@ const NavBar = forwardRef<HTMLDivElement, Props>(
           <div className="md:hidden flex justify-between h-20 rounded-md  ">
             <div></div>
             {isOpen && (
-              <div className="flex ease-in-out flex-col text-xl space-y-5 text-black pt-5 font-bold items-center w-32 h-[200px] rounded-md  bg-gradient-to-r from-indigo-500">
-                <p className="hover:cursor-pointer" onClick={scrollToFeatures}>
+              <div className="flex ease-in-out flex-col  space-y-5 text-black pt-5 font-bold items-center w-32 h-[200px] rounded-md  bg-gradient-to-r from-indigo-500">
+                <p
+                  className="hover:cursor-pointer text-center"
+                  onClick={scrollToFeatures}
+                >
                   {"Products & Features"}
                 </p>
-                <p className="hover:cursor-pointer" onClick={scrollToGoal}>
-                  Goals
-                </p>
+
                 <p className="hover:cursor-pointer" onClick={scrollToCommunity}>
                   Community
                 </p>
