@@ -20,18 +20,19 @@ const Goal = forwardRef<HTMLDivElement, Props>(
     };
 
     const { View, setSpeed } = useLottie(options);
-    setSpeed(0.1);
+    setSpeed(0.5);
     return (
       <div className="min-h-screen bg-[#00040F] w-screen ">
         <div className=" ">
-          <div className="-ml-64  absolute">{View}</div>
+          <div className="-ml-64 hidden md:absolute z-1">{View}</div>
+          <div className="-ml-[310px] md:hidden absolute z-1">{View}</div>
           <div className="flex w-full justify-center">
             <div
               className="flex flex-col mt-32  items-center w-[667px] gap-5"
               ref={targetRefGoal}
             >
               <p className={styles.ourGoal}>Our Goal</p>
-              <p className="md:px-0 px-5 z-[500] text-center w-[700px]">
+              <p className="md:px-0 px-5 z-[900] text-center md:w-[700px] w-[380px]">
                 Nitro Finance aims to provide a decentralized platform that
                 combines the features of a decentralized exchange (DEX) and a
                 money market. By doing so, Nitro Finance aims to create a
@@ -61,7 +62,7 @@ const Goal = forwardRef<HTMLDivElement, Props>(
               </div>
             </Link>
 
-            <Link href="">
+            <Link href="https://twitter.com/NitroFinance">
               <div className={styles.icons}>
                 <BsTwitter />
               </div>

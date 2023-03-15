@@ -62,7 +62,7 @@ export default function Home() {
           <NavBar
             scrollToGoal={scrollToTargetGoal}
             scrollToCommunity={scrollToTargetCommunity}
-            scrollToAboutUs={scrollToTargetAboutUs}
+            scrollToFeatures={scrollToFeatures}
           />
           <Hero />
           <Features

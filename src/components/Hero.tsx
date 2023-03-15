@@ -14,7 +14,7 @@ const Hero = (props: Props) => {
   };
 
   const { View, setSpeed } = useLottie(options);
-  setSpeed(0.08);
+  setSpeed(0.5);
 
   return (
     <div className="h-screen w-full bg-[#00040F] text-white">
