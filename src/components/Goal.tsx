@@ -28,14 +28,9 @@ const Goal = forwardRef<HTMLDivElement, Props>(({ targetReCommunity }, ref) => {
           <div className="flex flex-col mt-32  items-center w-[667px] gap-5">
             <p className={styles.ourGoal}>Our Goal</p>
             <p className="md:px-0 px-5 z-[900] text-center md:w-[700px] w-[380px]">
-              Nitro Finance aims to provide a decentralized platform that
-              combines the features of a decentralized exchange (DEX) and a
-              money market. By doing so, Nitro Finance aims to create a flexible
-              and versatile solution that enables users to participate in token
-              exchange and lending-borrowing dynamics in a single AMM pool,
-              providing a more seamless and efficient user experience.
-              Additionally, Nitro Finance aims to play a part in making the
-              ultimate goal of DeFi a reality.
+              {
+                "Nitro Finance aspires to revolutionize the DeFi landscape by merging the capabilities of a decentralized exchange (DEX) and a money market into a single, unified AMM pool. This groundbreaking approach enhances capital efficiency while catering to both token exchange and lending-borrowing needs with optimal effectiveness. Nitro Finance's ultimate goal is to drive financial innovation, accessibility, and inclusivity, propelling the DeFi ecosystem toward a future where decentralized finance empowers individuals globally."
+              }
             </p>
           </div>
         </div>
