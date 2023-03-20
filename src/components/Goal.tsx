@@ -29,7 +29,7 @@ const Goal = forwardRef<HTMLDivElement, Props>(({ targetReCommunity }, ref) => {
             <p className={styles.ourGoal}>Our Goal</p>
             <p className="md:px-0 px-5 z-[900] text-center md:w-[700px] w-[380px]">
               {
-                "Nitro Finance aspires to revolutionize the DeFi landscape by merging the capabilities of a decentralized exchange (DEX) and a money market into a single, unified AMM pool. This groundbreaking approach enhances capital efficiency while catering to both token exchange and lending-borrowing needs with optimal effectiveness. Nitro Finance's ultimate goal is to drive financial innovation, accessibility, and inclusivity, propelling the DeFi ecosystem toward a future where decentralized finance empowers individuals globally."
+                "Nitro Finance aspires to revolutionize the DeFi landscape by merging the capabilities of a decentralized exchange (DEX) and a money market (MM) into a single, unified AMM pool. This groundbreaking approach enhances capital efficiency while catering to both token exchange and lending-borrowing needs with optimal effectiveness. Nitro Finance's ultimate goal is to drive financial innovation, accessibility, and inclusivity, propelling the DeFi ecosystem toward a future where decentralized finance empowers individuals globally."
               }
             </p>
           </div>
