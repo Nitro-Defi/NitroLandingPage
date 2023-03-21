@@ -9,8 +9,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const targetReCommunity = useRef<HTMLDivElement>(null);
-
+  const targetRefSolution = useRef<HTMLDivElement>(null);
   const targetRefFeatures = useRef<HTMLDivElement>(null);
+  const targetRefTop = useRef<HTMLDivElement>(null);
 
   const scrollToTargetCommunity = () => {
     if (targetReCommunity.current) {
@@ -29,6 +30,25 @@ export default function Home() {
       });
     }
   };
+
+  const scrollToSolution = () => {
+    if (targetRefSolution.current) {
+      window.scrollTo({
+        top: targetRefSolution.current.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const scrollToTop = () => {
+    if (targetRefTop.current) {
+      window.scrollTo({
+        top: targetRefTop.current.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <>
       <Head>
@@ -43,14 +63,18 @@ export default function Home() {
           <NavBar
             scrollToCommunity={scrollToTargetCommunity}
             scrollToFeatures={scrollToFeatures}
+            scrollToSolution={scrollToSolution}
           />
-          <Hero />
+          <Hero targetRefTop={targetRefTop} />
           <Features
             scrollToFeatures={scrollToFeatures}
             targetRefFeatures={targetRefFeatures}
           />
-          <Body />
-          <Goal targetReCommunity={targetReCommunity} />
+          <Body targetRefSolution={targetRefSolution} />
+          <Goal
+            targetReCommunity={targetReCommunity}
+            scrollToTop={scrollToTop}
+          />
         </div>
       </main>
     </>

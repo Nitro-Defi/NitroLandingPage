@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef, RefObject } from "react";
 import styles from "@/styles/Home.module.css";
 
 import impLoss from "@/assets/jsonAssets/NitroFinance-Design-01.json";
@@ -7,11 +7,13 @@ import capEfficiency from "@/assets/jsonAssets/NitroFinance-Design-02-v2.json";
 import elimination from "@/assets/jsonAssets/NitroFinance-Design-03-v1.json";
 import Lottie from "lottie-react";
 
-type Props = {};
+type Props = {
+  targetRefSolution: RefObject<HTMLDivElement>;
+};
 
-const Body = (props: Props) => {
+const Body = forwardRef<HTMLDivElement, Props>(({ targetRefSolution }, ref) => {
   return (
-    <div className="  bg-[#00040F] w-full">
+    <div className="  bg-[#00040F] w-full" ref={targetRefSolution}>
       <div className={styles.purpleBlob}></div>
       <div>
         <div className="md:flex pt-[250px]  justify-between px-5 md:px-[145px]">
@@ -70,6 +72,6 @@ const Body = (props: Props) => {
       </div>
     </div>
   );
-};
+});
 
 export default Body;

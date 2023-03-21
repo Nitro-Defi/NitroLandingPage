@@ -1,12 +1,14 @@
-import React from "react";
+import React, { forwardRef, RefObject } from "react";
 
 import styles from "@/styles/Home.module.css";
 
 import { useLottie } from "lottie-react";
 import frame from "@/assets/spinner.json";
-type Props = {};
+type Props = {
+  targetRefTop: RefObject<HTMLDivElement>;
+};
 
-const Hero = (props: Props) => {
+const Hero = forwardRef<HTMLDivElement, Props>(({ targetRefTop }, ref) => {
   const options = {
     animationData: frame,
     loop: true,
@@ -17,7 +19,7 @@ const Hero = (props: Props) => {
   setSpeed(0.5);
 
   return (
-    <div className="h-screen w-full bg-[#00040F] text-white">
+    <div className="h-screen w-full bg-[#00040F] text-white" ref={targetRefTop}>
       <div className="flex justify-between items-center px-5 md:px-[137px] pt-[127px]">
         <div className="md:w-[644px] pt-[100px] w-full flex flex-col">
           <h1 className="font-[1000] md:text-[70px]  md:mt-0 text-5xl tracking-wider">
@@ -39,6 +41,6 @@ const Hero = (props: Props) => {
       </div>
     </div>
   );
-};
+});
 
 export default Hero;

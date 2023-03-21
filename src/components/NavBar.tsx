@@ -7,10 +7,11 @@ import { IoMdClose } from "react-icons/io";
 type Props = {
   scrollToCommunity: () => void;
   scrollToFeatures: () => void;
+  scrollToSolution: () => void;
 };
 
 const NavBar = forwardRef<HTMLDivElement, Props>(
-  ({ scrollToCommunity, scrollToFeatures }, ref) => {
+  ({ scrollToCommunity, scrollToFeatures, scrollToSolution }, ref) => {
     const [isOpen, setIsOpen] = useState(false);
     return (
       <div className="w-screen text-white  bg-[#00040F] h-[96px] top-0 fixed  z-[1000] ">
@@ -57,6 +58,13 @@ const NavBar = forwardRef<HTMLDivElement, Props>(
 
               <p
                 className="hover:cursor-pointer hover:text-[#00FDEE]"
+                onClick={scrollToSolution}
+              >
+                {"Problems & Solution"}
+              </p>
+
+              <p
+                className="hover:cursor-pointer hover:text-[#00FDEE]"
                 onClick={scrollToCommunity}
               >
                 Community
@@ -72,6 +80,12 @@ const NavBar = forwardRef<HTMLDivElement, Props>(
                   onClick={scrollToFeatures}
                 >
                   {"Products & Features"}
+                </p>
+                <p
+                  className="hover:cursor-pointer hover:text-[#00FDEE]"
+                  onClick={scrollToSolution}
+                >
+                  {"Problems & Solution"}
                 </p>
 
                 <p className="hover:cursor-pointer" onClick={scrollToCommunity}>
