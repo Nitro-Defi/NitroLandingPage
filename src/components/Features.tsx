@@ -6,7 +6,7 @@ import second from "@/assets/liquidity.svg";
 import third from "@/assets/binorder.svg";
 import forth from "@/assets/mechanics.svg";
 import fifth from "@/assets/star.svg";
-import { AiOutlineArrowDown } from "react-icons/ai";
+import arrowDown from "@/assets/arrowDown.svg";
 
 type Props = {
   scrollToFeatures: () => void;
@@ -24,12 +24,16 @@ const Features = forwardRef<HTMLDivElement, Props>(
         </div>
         <div className="flex justify-center">
           <div
-            className=" -mt-[60px] text-xl animate-bounce rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 w-[60px] h-[60px] hover:cursor-pointer px-1 py-1"
+            className=" -mt-[60px] text-xl animate-bounce rounded-full  w-[60px] h-[60px] hover:cursor-pointer px-1 py-1"
             onClick={scrollToFeatures}
           >
-            <div className="bg-[#00040F] h-full w-full rounded-full flex justify-center items-center">
-              <AiOutlineArrowDown className="text-3xl  text-blue-300" />
-            </div>
+            <Image
+              src={arrowDown}
+              alt=""
+              height={1}
+              width={1}
+              className="w-full h-full  rounded-full"
+            />
           </div>
         </div>
 
