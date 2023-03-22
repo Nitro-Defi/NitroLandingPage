@@ -60,7 +60,7 @@ const NavBar = forwardRef<HTMLDivElement, Props>(
                 className="hover:cursor-pointer hover:text-[#00FDEE]"
                 onClick={scrollToSolution}
               >
-                {"Problems & Solution"}
+                {"Problems Solved"}
               </p>
 
               <p
@@ -85,7 +85,7 @@ const NavBar = forwardRef<HTMLDivElement, Props>(
                   className="hover:cursor-pointer hover:text-[#00FDEE]"
                   onClick={scrollToSolution}
                 >
-                  {"Problems & Solution"}
+                  {"Problems Solved"}
                 </p>
 
                 <p className="hover:cursor-pointer" onClick={scrollToCommunity}>
