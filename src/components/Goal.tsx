@@ -49,7 +49,7 @@ const Goal = forwardRef<HTMLDivElement, Props>(
           <p className={styles.ourGoal}>Join Our Community</p>
 
           <div className="flex text-2xl mt-10 gap-5 ">
-            <Link href="">
+            <Link href="https://discord.gg/nitro-finance">
               <div className={styles.icons}>
                 <BsDiscord />
               </div>
