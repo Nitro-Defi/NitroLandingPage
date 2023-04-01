@@ -70,7 +70,7 @@ const Goal = forwardRef<HTMLDivElement, Props>(
         </div>
         <div className="flex justify-end px-10">
           <div
-            className=" -mt-[60px] text-xl animate-bounce    w-[60px] h-[60px] hover:cursor-pointer px-1 py-1"
+            className=" -mt-[60px] text-xl animate-bounce  w-10 h-10   md:w-[60px] md:h-[60px] hover:cursor-pointer px-1 py-1"
             onClick={scrollToTop}
           >
             <div className={styles.arrowBtnUp}>
