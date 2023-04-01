@@ -100,7 +100,7 @@
 }
 
 .readDocs:hover {
-  border-width: 1px;
+  border-width: 1px !important;
   border-style: solid;
 
   border-image: linear-gradient(
