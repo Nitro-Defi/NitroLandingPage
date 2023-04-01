@@ -2,7 +2,7 @@ import React, { forwardRef, useState } from "react";
 import styles from "@/styles/Home.module.css";
 import logo from "@/assets/logo.png";
 import Image from "next/image";
-import { BiMenuAltRight } from "react-icons/bi";
+import { HiMenu } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 type Props = {
   scrollToCommunity: () => void;
@@ -34,17 +34,17 @@ const NavBar = forwardRef<HTMLDivElement, Props>(
             </div>
             {isOpen ? (
               <div
-                className="text-5xl ease-in-out md:hidden "
+                className="text-3xl ease-in-out md:hidden "
                 onClick={() => setIsOpen(false)}
               >
                 <IoMdClose />
               </div>
             ) : (
               <div
-                className="text-5xl ease-in-out md:hidden"
+                className="text-3xl ease-in-out md:hidden"
                 onClick={() => setIsOpen(true)}
               >
-                <BiMenuAltRight />
+                <HiMenu />
               </div>
             )}
 
@@ -76,7 +76,7 @@ const NavBar = forwardRef<HTMLDivElement, Props>(
             {isOpen && (
               <div className="flex ease-in-out flex-col  space-y-5 text-black pt-5 font-bold items-center w-32 h-[200px] rounded-md  bg-gradient-to-r from-indigo-500">
                 <p
-                  className="hover:cursor-pointer text-center"
+                  className="hover:cursor-pointer text-center hover:text-[#00FDEE]"
                   onClick={scrollToFeatures}
                 >
                   {"Products & Features"}
@@ -88,7 +88,10 @@ const NavBar = forwardRef<HTMLDivElement, Props>(
                   {"Problems Solved"}
                 </p>
 
-                <p className="hover:cursor-pointer" onClick={scrollToCommunity}>
+                <p
+                  className="hover:cursor-pointer hover:text-[#00FDEE]"
+                  onClick={scrollToCommunity}
+                >
                   Community
                 </p>
               </div>
