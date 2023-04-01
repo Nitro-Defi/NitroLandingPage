@@ -34,7 +34,6 @@
 .btnLaunchApp:hover {
   border-width: 1px;
   border-style: solid;
-  border-radius: 5px;
 
   border-image: linear-gradient(
       90.21deg,
@@ -100,7 +99,7 @@
 }
 
 .readDocs:hover {
-  border-width: 1px !important;
+  border: 1px solid;
   border-style: solid;
 
   border-image: linear-gradient(
