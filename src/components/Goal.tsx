@@ -25,7 +25,9 @@ const Goal = forwardRef<HTMLDivElement, Props>(
     return (
       <div className="min-h-screen bg-[#00040F] w-screen ">
         <div className=" ">
-          <div className="md:-ml-64 -ml-[310px]   absolute z-1">{View}</div>
+          <div className="md:-ml-64 -ml-[310px] hidden md:block  absolute z-1">
+            {View}
+          </div>
 
           <div className="flex w-full justify-center">
             <div className="flex flex-col mt-32  items-center w-[667px] gap-5">

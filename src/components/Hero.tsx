@@ -4,6 +4,8 @@ import styles from "@/styles/Home.module.css";
 
 import { useLottie } from "lottie-react";
 import frame from "@/assets/spinner.json";
+import { Router } from "next/router";
+import Link from "next/link";
 type Props = {
   targetRefTop: RefObject<HTMLDivElement>;
 };
@@ -21,7 +23,7 @@ const Hero = forwardRef<HTMLDivElement, Props>(({ targetRefTop }, ref) => {
   return (
     <div className="h-screen w-full bg-[#00040F] text-white" ref={targetRefTop}>
       <div className="flex justify-between items-center px-5 md:px-[137px] pt-[127px]">
-        <div className="md:w-[644px] pt-[100px] w-full flex flex-col">
+        <div className="md:w-[644px] md:pt-[100px] pt-10 w-full flex flex-col">
           <h1 className="font-[1000] md:text-[70px]  md:mt-0 text-5xl tracking-wider">
             THE DUAL FUNCTION AMM
           </h1>
@@ -33,7 +35,11 @@ const Hero = forwardRef<HTMLDivElement, Props>(({ targetRefTop }, ref) => {
           </p>
           <div className="flex gap-[32px] mt-[48px]">
             <button className={styles.btnLaunchApp}>Launch App</button>
-            <button className={styles.readDocs}>Read Docs</button>{" "}
+            <button className={styles.readDocs}>
+              <Link href="https://nitro-finance.gitbook.io/nitro-finance/">
+                Read Docs
+              </Link>
+            </button>{" "}
           </div>
         </div>
 
