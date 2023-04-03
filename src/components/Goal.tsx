@@ -45,10 +45,15 @@ const Goal = forwardRef<HTMLDivElement, Props>(
           </div>
         </div>
         <div
-          className="flex flex-col px-20 md:px-0 items-center mt-[150px]"
+          className="flex flex-col px-10 md:px-0 items-center mt-[150px]"
           ref={targetReCommunity}
         >
-          <p className={styles.ourGoal}>Join Our Community</p>
+          <p className={`${styles.ourGoal} hidden md:block`}>
+            Join Our Community
+          </p>
+          <p className={`${styles.ourGoalMobile}  md:hidden`}>
+            Join Our Community
+          </p>
 
           <div className="flex text-2xl mt-10 gap-5 ">
             <Link href="https://discord.gg/nitro-finance">
@@ -72,7 +77,7 @@ const Goal = forwardRef<HTMLDivElement, Props>(
         </div>
         <div className="flex justify-end px-10">
           <div
-            className=" -mt-[60px] text-xl animate-bounce  w-10 h-10   md:w-[60px] md:h-[60px] hover:cursor-pointer px-1 py-1"
+            className=" -mt-[60px] text-xl animate-bounce  hidden md:block   md:w-[60px] md:h-[60px] hover:cursor-pointer px-1 py-1"
             onClick={scrollToTop}
           >
             <div className={styles.arrowBtnUp}>
@@ -80,8 +85,10 @@ const Goal = forwardRef<HTMLDivElement, Props>(
             </div>
           </div>
         </div>
-        <div className="flex justify-between  px-5 text-[10px] md:text-[15px] md:px-32 mt-32 pb-10">
-          <p>Copyright © 2022 NitroFinance. All rights reserved.</p>
+        <div className="flex justify-between  px-5 text-[10px] md:text-[15px] md:px-32 mt-32 pb-5">
+          <p className="w-[150px]">
+            Copyright © 2022 NitroFinance. All rights reserved.
+          </p>
           <div className="flex gap-5">
             <p>Terms and Conditions </p>
             <p>Privacy Policy</p>

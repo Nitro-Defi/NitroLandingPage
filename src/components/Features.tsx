@@ -99,7 +99,7 @@ const Features = forwardRef<HTMLDivElement, Props>(
               <p className="text-xl font-bold pt-2"> Nitro Point system</p>
               <p className="text-sm text-gray-300 mt-3 text-center">
                 {
-                  "Nitro Finance's Nitro Point system allows phenomenal growth without dilution in value. and provides a sustainable"
+                  "Nitro Finance's Nitro Point system supports phenomenal growth without diluting value and provides a sustainable mechanism for rewarding users."
                 }
               </p>
             </div>

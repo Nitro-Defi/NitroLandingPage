@@ -2,8 +2,8 @@ import Head from "next/head";
 
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-import { NavBar, Hero, Features, Body, Goal } from "../components";
-import React, { useRef } from "react";
+import { NavBar, Hero, Features, Body, Goal, MobileMenu } from "../components";
+import React, { useRef, useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,6 +12,24 @@ export default function Home() {
   const targetRefSolution = useRef<HTMLDivElement>(null);
   const targetRefFeatures = useRef<HTMLDivElement>(null);
   const targetRefTop = useRef<HTMLDivElement>(null);
+  const [isOpen, setIsOpen] = useState(false);
+  const [menuToggledOn, setMenuTogglesOn] = useState(false);
+
+  const menuToggleHandler = (data: Boolean) => {
+    if (data === true) {
+      setMenuTogglesOn(true);
+    } else {
+      setMenuTogglesOn(false);
+    }
+  };
+
+  const setIsopenHandler = (data: Boolean) => {
+    if (data === true) {
+      setIsOpen(true);
+    } else {
+      setIsOpen(false);
+    }
+  };
 
   const scrollToTargetCommunity = () => {
     if (targetReCommunity.current) {
@@ -64,17 +82,32 @@ export default function Home() {
             scrollToCommunity={scrollToTargetCommunity}
             scrollToFeatures={scrollToFeatures}
             scrollToSolution={scrollToSolution}
+            menuToggleHandler={menuToggleHandler}
+            setIsopenHandler={setIsopenHandler}
+            isOpen={isOpen}
           />
-          <Hero targetRefTop={targetRefTop} />
-          <Features
-            scrollToFeatures={scrollToFeatures}
-            targetRefFeatures={targetRefFeatures}
-          />
-          <Body targetRefSolution={targetRefSolution} />
-          <Goal
-            targetReCommunity={targetReCommunity}
-            scrollToTop={scrollToTop}
-          />
+          {menuToggledOn ? (
+            <MobileMenu
+              scrollToCommunity={scrollToTargetCommunity}
+              scrollToFeatures={scrollToFeatures}
+              scrollToSolution={scrollToSolution}
+              menuToggleHandler={menuToggleHandler}
+              setIsopenHandler={setIsopenHandler}
+            />
+          ) : (
+            <>
+              <Hero targetRefTop={targetRefTop} />
+              <Features
+                scrollToFeatures={scrollToFeatures}
+                targetRefFeatures={targetRefFeatures}
+              />
+              <Body targetRefSolution={targetRefSolution} />
+              <Goal
+                targetReCommunity={targetReCommunity}
+                scrollToTop={scrollToTop}
+              />
+            </>
+          )}
         </div>
       </main>
     </>

@@ -154,6 +154,17 @@
   text-align: center;
 }
 
+.ourGoalMobile {
+  background: linear-gradient(90deg, #00fdee 4.62%, #3645ff 114.87%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
 .bodyBlob {
   position: absolute;
   width: 436.52px;
