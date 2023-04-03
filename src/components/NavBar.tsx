@@ -20,7 +20,6 @@ const NavBar = forwardRef<HTMLDivElement, Props>(
       scrollToFeatures,
       scrollToSolution,
       menuToggleHandler,
-
       isOpen,
       setIsopenHandler,
     },

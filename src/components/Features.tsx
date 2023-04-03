@@ -24,8 +24,8 @@ const Features = forwardRef<HTMLDivElement, Props>(
         </div>
         <div className="flex justify-center">
           <div
-            className=" -mt-[60px] text-xl animate-bounce rounded-full  w-[60px] h-[60px] hover:cursor-pointer px-1 py-1"
-            onClick={scrollToFeatures}
+            className=" md:-mt-[60px] -mt-[120px] text-xl animate-bounce rounded-full  w-[60px] h-[60px] hover:cursor-pointer px-1 py-1"
+            onClick={() => scrollToFeatures()}
           >
             <Image
               src={arrowDown}
@@ -41,12 +41,12 @@ const Features = forwardRef<HTMLDivElement, Props>(
           className="flex justify-center px-5 md:px-0 "
           ref={targetRefFeatures}
         >
-          <p className="text-5xl mt-20 font-bold pt-10 text-center ">
+          <p className="md:text-5xl text-3xl mt-20 font-bold pt-10 text-center ">
             Products And Features
           </p>
         </div>
         <div className="flex mt-20  flex-row flex-wrap gap-5 justify-center px-7 md:px-[130px] ">
-          <div className="w-[368px] h-[250px] rounded-[20px] bg-[#061727] hover:cursor-pointer hover:-translate-y-5 transform transition duration-500 ">
+          <div className="w-[368px] h-[250px] rounded-[20px] bg-[#061727] md:hover:cursor-pointer md:hover:-translate-y-5 transform transition duration-500 ">
             <div className="flex flex-col items-center mt-10 px-10">
               <Image src={first} alt="" height="0" width="0" className="" />
               <p className="text-xl font-bold pt-2">Dual Function AMM</p>
@@ -57,7 +57,7 @@ const Features = forwardRef<HTMLDivElement, Props>(
               </p>
             </div>
           </div>
-          <div className="w-[368px] md:h-[250px] h-[300px]  rounded-[20px] bg-[#061727] hover:cursor-pointer hover:-translate-y-5 transform transition duration-500 ">
+          <div className="w-[368px] md:h-[250px] h-[250px]  rounded-[20px] bg-[#061727] md:hover:cursor-pointer md:hover:-translate-y-5 transform transition duration-500 ">
             <div className="flex flex-col items-center mt-10 px-10">
               <Image src={second} alt="" height="0" width="0" className="" />
               <p className="text-xl font-bold pt-2">Concentrated Liquidity</p>
@@ -68,7 +68,7 @@ const Features = forwardRef<HTMLDivElement, Props>(
               </p>
             </div>
           </div>
-          <div className="w-[368px] md:h-[250px] h-[300px]  rounded-[20px] bg-[#061727] hover:cursor-pointer hover:-translate-y-5 transform transition duration-500 ">
+          <div className="w-[368px] md:h-[250px] h-[250px]  rounded-[20px] bg-[#061727] md:hover:cursor-pointer md:hover:-translate-y-5 transform transition duration-500 ">
             <div className="flex flex-col items-center mt-10 px-10">
               <Image src={third} alt="" height="0" width="0" className="" />
               <p className="text-xl font-bold pt-2"> Bin Order</p>
@@ -79,7 +79,7 @@ const Features = forwardRef<HTMLDivElement, Props>(
               </p>
             </div>
           </div>
-          <div className="w-[368px] mt-5 md:h-[250px] h-[300px] rounded-[20px] bg-[#061727] hover:cursor-pointer hover:-translate-y-5 transform transition duration-500 ">
+          <div className="w-[368px] mt-5 md:h-[250px] h-[250px] rounded-[20px] bg-[#061727] md:hover:cursor-pointer md:hover:-translate-y-5 transform transition duration-500 ">
             <div className="flex flex-col items-center mt-10 px-10">
               <Image src={forth} alt="" height="0" width="0" className="" />
               <p className="text-[18px] font-bold text-center pt-2">
@@ -93,7 +93,7 @@ const Features = forwardRef<HTMLDivElement, Props>(
               </p>
             </div>
           </div>
-          <div className="w-[368px] mt-5 md:h-[250px] h-[300px]  rounded-[20px] bg-[#061727] hover:cursor-pointer hover:-translate-y-5 transform transition duration-500 ">
+          <div className="w-[368px] mt-5 md:h-[250px] h-[250px]  rounded-[20px] bg-[#061727] md:hover:cursor-pointer md:hover:-translate-y-5 transform transition duration-500 ">
             <div className="flex flex-col items-center mt-10 px-10">
               <Image src={fifth} alt="" height="0" width="0" className="" />
               <p className="text-xl font-bold pt-2"> Nitro Point system</p>

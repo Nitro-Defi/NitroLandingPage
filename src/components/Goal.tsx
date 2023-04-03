@@ -51,9 +51,7 @@ const Goal = forwardRef<HTMLDivElement, Props>(
           <p className={`${styles.ourGoal} hidden md:block`}>
             Join Our Community
           </p>
-          <p className={`${styles.ourGoalMobile}  md:hidden`}>
-            Join Our Community
-          </p>
+          <p className={`${styles.ourGoal}  md:hidden`}>Join Our Community</p>
 
           <div className="flex text-2xl mt-10 gap-5 ">
             <Link href="https://discord.gg/nitro-finance">

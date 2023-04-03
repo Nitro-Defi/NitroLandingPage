@@ -22,7 +22,7 @@ const Body = forwardRef<HTMLDivElement, Props>(({ targetRefSolution }, ref) => {
               {" "}
               Mitigation of impermanent loss
             </h2>
-            <p className="mt-[24px] text-[#BEBEBE]">
+            <p className="mt-[24px] text-[#BEBEBE] text-center md:text-left">
               {
                 "In Nitro Finance, liquidity providers benefit from the swap fee  and a variable fee structure in the event of borrowing, such as debt rollover, expired liquidation, and repayment events, which helps to mitigate impermanent loss."
               }
@@ -42,7 +42,7 @@ const Body = forwardRef<HTMLDivElement, Props>(({ targetRefSolution }, ref) => {
               {" "}
               Increase in capital efficiency
             </h2>
-            <p className="mt-[24px] text-[#BEBEBE]">
+            <p className="mt-[24px] text-[#BEBEBE] text-center md:text-left">
               {
                 "The platform's innovative AMM enables users to borrow, swap, and provide liquidity through a single AMM pool, increasing capital efficiency and reducing fragmentation."
               }
@@ -59,7 +59,7 @@ const Body = forwardRef<HTMLDivElement, Props>(({ targetRefSolution }, ref) => {
               {" "}
               The Elimination Of Bad Debt
             </h2>
-            <p className="mt-[24px] text-[#BEBEBE] ">
+            <p className="mt-[24px] text-[#BEBEBE] text-center md:text-left ">
               {
                 "             Nitro Finance features an automated liquidation process that helps to eliminate bad debt in the AMM pool by ensuring that positions are quickly and efficiently liquidated in the event of market price movement."
               }
