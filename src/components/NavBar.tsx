@@ -34,13 +34,13 @@ const NavBar = forwardRef<HTMLDivElement, Props>(
           </div>
 
           <div className="flex h-full justify-between md:px-[66px] px-5 items-center">
-            <div className="flex md:px-[22px] items-center">
+            <div className="flex md:px-[22px] items-center  ">
               <Image
                 src={logo}
                 alt="logo"
                 height="0"
                 width="0"
-                className="mr-[14px] h-[45px] w-[40px] "
+                className="mr-[14px] h-[10px] w-[10px]  md:h-[45px] md:w-[40px] "
               />
               <p>NITROFINANCE</p>
             </div>

@@ -18,7 +18,7 @@ const MobileMenu = forwardRef<HTMLDivElement, Props>(
     ref
   ) => {
     return (
-      <div className=" flex-col  flex pt-[127px] gap-10  bg-[#00040F] w-full h-screen px-5 text-white text-xl font-bold">
+      <div className=" flex-col  flex pt-[127px] gap-10  bg-[#00040F] w-full h-screen px-5 text-white text-xl ">
         <p
           className="hover:cursor-pointer"
           onClick={() => {
