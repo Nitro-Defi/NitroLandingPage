@@ -79,7 +79,7 @@ const Features = forwardRef<HTMLDivElement, Props>(
               </p>
             </div>
           </div>
-          <div className="w-[368px] mt-5 md:h-[250px] h-[250px] rounded-[20px] bg-[#061727] md:hover:cursor-pointer md:hover:-translate-y-5 transform transition duration-500 ">
+          <div className="w-[368px] mt-5 md:h-[250px] h-[280px] rounded-[20px] bg-[#061727] md:hover:cursor-pointer md:hover:-translate-y-5 transform transition duration-500 ">
             <div className="flex flex-col items-center mt-10 px-10">
               <Image src={forth} alt="" height="0" width="0" className="" />
               <p className="text-[18px] font-bold text-center pt-2">
