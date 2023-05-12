@@ -1,6 +1,6 @@
 import React, { forwardRef, useState } from "react";
 import styles from "@/styles/Home.module.css";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/nitroLogo.svg";
 import Image from "next/image";
 import { HiMenu } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";

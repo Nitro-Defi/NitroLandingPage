@@ -84,8 +84,8 @@ const Goal = forwardRef<HTMLDivElement, Props>(
           </div>
         </div>
         <div className="flex justify-between  px-5 text-[10px] md:text-[15px] md:px-32 mt-32 pb-5">
-          <p className="w-[150px]">
-            Copyright © 2022 NitroFinance. All rights reserved.
+          <p className="">
+            Copyright © 2023 NitroFinance. All rights reserved.
           </p>
           <div className="flex gap-5">
             <p>Terms and Conditions </p>
