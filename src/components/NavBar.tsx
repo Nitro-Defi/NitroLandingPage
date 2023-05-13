@@ -42,7 +42,7 @@ const NavBar = forwardRef<HTMLDivElement, Props>(
                 width="0"
                 className="mr-[14px] h-[10px] w-[10px]  md:h-[45px] md:w-[40px] "
               />
-              <p>NITROFINANCE</p>
+               <p className="font-bold text-xl">Nitrofinance</p>
             </div>
 
             <div className="md:flex gap-10 px-[22px] hidden">
@@ -85,7 +85,7 @@ const NavBar = forwardRef<HTMLDivElement, Props>(
                 width="0"
                 className="mr-[14px] h-[45px] w-[40px] "
               />
-              <p>NITROFINANCE</p>
+               <p className="font-bold text-xl">Nitrofinance</p>
             </div>
             {isOpen ? (
               <div
